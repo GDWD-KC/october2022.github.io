@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+#main {
+    background-color: lightblue;
+    padding: 20px;
+    border: aliceblue 3px solid;
+    height: 100vh;
+}
+
+#content {
+    background-color:  rgb(110, 193, 221)  ;
+    border: aliceblue 3px solid;
+    padding: 35px;
+    height: 80vh;
+}
+
+#intro {
+    padding: 10px;
+    font-size: 16px;
+    height: 8vh;
+}
+
+.info {
+    font-size: 20px;
+    margin: 15px;
+    color: rgb(70, 70, 70);
+}
+
+
+h3 {
+    font-size: 23px ;
+}
+
+.quote {
+    padding: 20px;
+}
+
+.quoteContent {
+    font-size: 18px;
+    color: aliceblue;
+    font-style: italic;
+}
+
+.quoteCitation {
+   color: gray;
+   font-size: 14px;
+}
+
+#footer {
+    background-color: aliceblue;
+    height: 10vh; 
+    font-weight: 700;
+}
