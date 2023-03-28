@@ -1,3 +1,17 @@
+div {
+    height: 100px;
+    width: 100px;
+    border: 2px purple solid;
+}
+
+span {
+    color: pink;
+}
+
+ul li {
+    display: inline;
+}
+
 img {
-    float: right;
+    display: block;
 }
