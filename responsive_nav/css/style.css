@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/* General Styling */
+body, ul {
+    margin: 0;
+    font-family: "Lobster", cursive;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Nav Styling */
+    nav {
+        background-color: #473615;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding:10px;
+        align-items: baseline;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    ul li a{
+        color: white;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+
+    ul li a:hover {
+        letter-spacing: 3px ;
+    }
+
+    #logo {
+        width: 25px;
+    }
+
+    #homelogo {
+        margin-right: auto;
+    }
+
+    #homelogo h2 {
+        letter-spacing: 0px;
+        margin: 0;
+    }
+
+
+/* Dropdown Menu */
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: darkgray;
+        position: absolute;
+        opacity: 0;
+        background-color: antiquewhite;
+        border: 1px solid #fec34c;
+        border-radius: 10px;
+    }
+
+    .trigger-dropdown:hover .dropdown-menu  {
+    opacity: 1;
+    }
+
+    .dropdown-menu a {
+        color: #fec34c;
+    }
+
+/* Homepage Styling */
+.imgs{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    gap: 25px;
+} 
+.imgs img {
+    width: 30%;
+    object-fit: cover;
+}
+
+.hero-img {
+   background-image: url("../assets/cafe.jpg");
+   height: 50vh;
+   background-size: cover;
+   background-position: center;
+}
+ .info {
+    margin: 3rem;
+ }
+
+ .info h2 {
+    text-align: center;
+ }
