@@ -4,10 +4,11 @@
     html {  
         scroll-behavior: smooth;
     }
+
     body, ul, h1 {
         margin: 0;
     }
-
+ 
     body {
         font-family: "Lobster", cursive;
         background-color: antiquewhite;
@@ -95,6 +96,7 @@
         justify-content: center;
         align-items: center;
         }
+
 
     .hero-info{
         display: flex;
@@ -239,7 +241,6 @@
 
         #homelogo {
             margin: 0;
-           
         }
 
         .imgs, .about-imgs {
