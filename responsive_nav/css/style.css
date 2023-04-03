@@ -10,7 +10,7 @@
 
     body {
         font-family: "Lobster", cursive;
-        background-color: beige;
+        background-color: antiquewhite;
     }
 
     p {
@@ -52,6 +52,7 @@
 
     #logo {
         width: 25px;
+        box-shadow: none;
     }
 
     #homelogo {
@@ -130,6 +131,7 @@
 
     .hero-info #anchors a:hover {
         letter-spacing: 2px;
+        color:antiquewhite;
     }
     
     .btn{
@@ -155,6 +157,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     }
+
     .imgs, .about-imgs{
         display: flex;
         justify-content: center;
@@ -236,6 +239,7 @@
 
         #homelogo {
             margin: 0;
+           
         }
 
         .imgs, .about-imgs {
