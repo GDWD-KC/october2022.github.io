@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
 body {
     margin: 0;
 }
 
+/* Site Grid Style */
 main {
     display: grid;
-    grid-template-columns: 0.5fr 6fr;
+    grid-template-columns: 0.5fr 5fr;
     grid-template-rows: 1fr 6fr 1fr;
     grid-template-areas: 
     "navArea headerArea headerArea"
@@ -12,20 +15,55 @@ main {
     "navArea galleryArea galleryArea"
     ;
     height: 100vh;
+    text-align: center;
+    color: darkslategray;
+    font-family: 'Raleway', sans-serif;
 }
 
 nav {
     grid-area: navArea;
+    background-color:aliceblue;
 }
 
 section {
     grid-area: galleryArea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
     grid-area: headerArea;
+    background-color:rgba(222, 184, 135, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Navigation Style */
+ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column ;
+}
+
+li {
+    padding: 5px 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: darkslategray;
+}
+
+nav a:hover {
+    color: darkgray;
+}
+
+/* Image Gallery Style */
 #gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -57,6 +95,15 @@ header {
     #gallery img{
         width: 100%;
         height: auto;
+    }
+
+    ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    li {
+        padding: 0 5px;
     }
 
 }
