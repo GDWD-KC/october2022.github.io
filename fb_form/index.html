@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://use.typekit.net/fpj3wgm.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Facebook - Sign Up</title>
@@ -18,13 +19,81 @@
                 </h1>
             </div>
             <div class="form">
-                <form action="POST">
-                    <!-- Input Go Here -->
+                <form action="">
+                    <!-- Header -->
+                    <h2>Create a new account</h2>
+                    <p>It's quick and easy</p>
+                    <hr>
+                    <!-- Name Inputs -->
+                    <div id='name-inputs'>
+                        <input type="text" name="firstName" id="firstName" placeholder='First Name' required minlength='2' maxlength='30'>
+                        <input type="text" name="lastName" id="lastName" placeholder='Last Name' required minlength='2' maxlength='30'>
+                    </div>
+                    <!-- Email and Password-->
+                    <div id='emailPassword'>
+                        <input type="email" name="email" id="email" placeholder='Email' required minlength='1' maxlength='30'
+                        >
+                        <input type="password" name="password" id="password" placeholder="New Password" required minlength='6' maxlength='15'>
+                    </div>
+                    <!-- Select Menu -->
+                    <label for="birthday" class='labels'>
+                        <p class='labels'>
+                            Birthday <i class="fa-regular fa-circle-question"></i>
+                        </p>
+                    </label>
+                    <div id='selects'>
+                        <select name="age" id="month" required>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                        </select>
+                        <select name="age" id="day" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <select name="age" id="year" required>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                        </select>
+                    </div>
+                    <!-- Radio Gender Button -->
+                    <label for="gender" >
+                       <p class='labels'>
+                        Gender <i class="fa-regular fa-circle-question"></i>
+                        </p>
+                    </label>
+                    <div id=radio-btns>
+                      <!-- Female Btn -->
+                        <div class='radio'>
+                            <label for="female">Female</label>
+                            <input type="radio" name='gender' id='female'>
+                        </div>
+                        <!-- Male  -->
+                        <div class='radio'>
+                            <label for="male">Male</label>
+                            <input type="radio" name='gender' id='male'>
+                        </div>
+                         <!--Custom  -->
+                        <div class='radio'>
+                            <label for="custom">Custom</label>
+                            <input type="radio" name='gender' id='custom'>
+                        </div>
+                    </div>
+                    <!-- Sign Up Button -->
+                    <div id='signup'>
+                        <input type="submit" value="Sign Up" id='submitBtn'>
+                        <a href="#">Already have an account?</a>
+                    </div>
+
                 </form>
             </div>
         </section>
         <div class="gap">
-
         </div>
     </main>
 </body>
