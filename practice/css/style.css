@@ -1,17 +1,4 @@
-/* div {
-    height: 100px;
-    width: 100px;
-    border: 2px purple solid;
+.col {
+    background-color: lightblue;
+    border: 2px solid black;
 }
-
-span {
-    color: pink;
-}
-
-ul li {
-    display: inline;
-}
-
-img {
-    display: block;
-} */
