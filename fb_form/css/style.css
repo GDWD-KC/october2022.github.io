@@ -110,11 +110,11 @@ label p {
 }
 
 input:valid {
-    border: 3px green solid;
+    border: 1px green solid;
 }
 
 input:invalid {
-    border: 3px red solid;
+    border: 1px red solid;
 }
 
 
