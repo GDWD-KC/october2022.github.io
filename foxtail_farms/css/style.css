@@ -197,6 +197,7 @@ img {
   font-weight: normal;
   font-style: italic;
 }
+
 .content-content {
   padding:20px;
 }
@@ -209,6 +210,7 @@ img {
 .carousel-item {
   height: 60vh;
 }
+
 /* Footer ~~~~~~~ */
 .footer-hat {
   height:30px;

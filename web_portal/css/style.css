@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Font1;
+    src: url("../assets/AnkhSanctuary-nROx4.ttf");
+}
+
+h1, .navbar-brand {
+    font-family: Font1;
+}
+
+.site-hero {
+    height: 70vh;
+    background-image:url("../images/swirls.jpg");
+    background-position: center;
+    background-size:cover;
+}
