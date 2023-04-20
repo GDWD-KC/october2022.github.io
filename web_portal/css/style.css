@@ -1,15 +1,57 @@
+/* Fonts */
 @font-face {
     font-family: Font1;
-    src: url("../assets/AnkhSanctuary-nROx4.ttf");
+    src: url("../assets/BetterGrade-519DV.ttf") format("opentype");
+}
+/* General Styling */
+
+h1, h2, .navbar-brand {
+    font-family: Font1;  
 }
 
-h1, .navbar-brand {
-    font-family: Font1;
+.navbar-brand {
+    font-size: 2rem;
 }
+
+main h2 {
+    font-size: 3rem;
+}
+
+/* Hero Styling */
 
 .site-hero {
     height: 70vh;
-    background-image:url("../images/swirls.jpg");
+    background: radial-gradient(rgba(255, 255, 255, 0.148), rgba(0, 0, 0, 0.5)), url("../images/bg.jpg");
     background-position: center;
     background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    margin:0 5rem;
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.hero-text h1 {
+    font-size: 8rem;
+    color: white;
+    padding: 5px;
+    text-shadow: -7px 1px 7px rgba(128, 128, 128, 1);
+}
+
+/* About Section Styling */
+
+
+
+/* Project Section Styling */
+
+.card img {
+    object-fit: cover;
+    height: 20vh;
+}
+
+.card {
+    height: 100%;
 }
