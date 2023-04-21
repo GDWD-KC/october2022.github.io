@@ -71,9 +71,24 @@ header {
 form input[type=submit] {
     background-color: #00ED82;
     border: none;
+    font-family: GraphikSemiBold;
+    text-transform: uppercase;
+}
+
+form input {
+    width: 40%;
+}
+
+form input, #banner button {
     border-radius: 8px;
     padding: 0.9rem 1.2rem;
-    font-family: Graphic;
+}
+
+#banner button {
+    border: white 2px solid;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
 }
 
 /* Nav Styling */
