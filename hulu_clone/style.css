@@ -16,6 +16,11 @@
     src: url("assets/Graphik-Semibold-Trial.otf");
 }
 
+@font-face {
+    font-family: GraphikBold;
+    src: url("assets/Graphik-Bold-Trial.otf");
+}
+
 /* General Styling */
 * {
     font-family: Graphik;
@@ -44,28 +49,14 @@ header {
     margin-top: 5rem;
 }
 
-#bundle h5, #banner h5 {
+#bundle h5, #banner h5, main h5 {
     color: #00ED82;
     font-family: GraphikMedium;
     text-transform: uppercase;
 }
 
 #bundle img {
-    height: 12vh;
-}
-
-#banner {
-    display: flex;
-    align-self: stretch;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 2rem 0;
-}
-
-#banner img {
-    height: 8vh;
+    height: 10vh;
 }
 
 form input[type=submit] {
@@ -84,12 +75,65 @@ form input, #banner button {
     padding: 0.9rem 1.2rem;
 }
 
+
+form a {
+    color: white;
+}
+
+#form-links {
+    color: white;
+    margin: 1em 0 2.5em;
+}
+
+.terms {
+    font-size: smaller;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem 0;
+}
+
+#banner img {
+    height: 7vh;
+}
+
+#banner button {
+    font-family: GraphikSemiBold;
+    margin-bottom: 1rem;
+}
+
+#banner button:hover {
+    background-color: white;
+    color: #0b0c0f;
+    border: white;
+}
+
+#allthree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#allthree a {
+    color: white;
+}
+
+#trio {
+    width: 40%;
+    margin-left: 5rem;
+}
+
 #banner button {
     border: white 2px solid;
     color: white;
     background-color: transparent;
     text-transform: uppercase;
 }
+
 
 /* Nav Styling */
 nav {
@@ -101,6 +145,10 @@ nav {
 
 nav img, nav button {
     margin: 1rem 2.2rem;
+}
+
+nav img {
+    width: 100px;
 }
 
 nav button {
@@ -125,14 +173,49 @@ nav button:hover {
 main {
     background-color: #0b0c0f;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+
 }
 
 main h5 {
-    margin: 0;
+    margin-top: 4rem;
+}
 
+main h1 {
+    font-family: GraphikSemiBold;
+    margin: 0;
+}
+
+main p {
+    line-height: 1.5em;
+}
+
+
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+#gallery img {
+    height: 30vh;
 }
 
 /* Footer Styling */
 footer {
     background-color: #e8eaed;
+}
+
+/* Media query */
+@media screen and (max-width: 768px)  {
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
 }
