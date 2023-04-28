@@ -1,15 +1,53 @@
+/* General Styling */
+
+* {
+    font-family: Graphik; 
+    letter-spacing: 1px;
+}
+
 body {
     margin: 0;
+}
+
+h1 {
+    font-family: GraphikSemiBold;
+}
+
+h5 {
+    color: #00ED82;
+    font-family: GraphikMedium;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Graphik;
+    src: url("assets/Graphik-Regular-Trial.otf");
+}
+
+@font-face {
+    font-family: GraphikLight;
+    src: url("assets/Graphik-Light-Trial.otf");
+}
+
+@font-face {
+    font-family: GraphikMedium;
+    src: url("assets/Graphik-Medium-Trial.otf");
+}
+
+@font-face {
+    font-family: GraphikSemiBold;
+    src: url("assets/Graphik-Semibold-Trial.otf");
 }
 
 @font-face {
     font-family: GraphikBold;
     src: url("assets/Graphik-Bold-Trial.otf");
 }
+
 /* Header Styling */
 
 header {
-    background-image: url("./images/hulu-bg.jpeg");
+    background: radial-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.664)), url("./images/hulu-bg.jpeg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -24,19 +62,76 @@ header {
 }
 
 #bundle img {
-    height: 10vh;
+    height: 8vh;
+}
+
+form input[type=submit] {
+    background-color:#00ED82;
+    border: none;
+    font-family: GraphikSemiBold;
+}
+
+form input[type=submit]:hover {
+    opacity: 0.7;
+}
+
+form input {
+    padding: 0.9rem 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 40%;
+}
+
+form a, #get-all-three a {
+    color: white;
+}
+
+form a:first-of-type, #get-all-three a {
+    font-size: smaller;
 }
 
 #banner {
     display: flex;
     align-items: center;
-    align-self: center;
     justify-content: center;
     margin-top: auto;
+    padding-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 #banner img {
     height: 5vh;
+}
+
+#get-all-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#get-all-three button {
+    border: white 2px solid;
+    border-radius: 5px;
+    font-family: GraphikSemiBold;
+    background-color: transparent;
+    padding: 0.9rem 1.2rem;
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+#trio-bundle {
+    width: 40%;
+    margin-left: 5rem;
+}
+
+#trio-bundle h5  {
+    font-family: Graphik;
+    margin-bottom: 0.5rem;
+}
+
+#trio-bundle h2 {
+    font-family: GraphikLight;
+    margin-top: 0;
 }
 
 /* Navigation Styling */
@@ -49,10 +144,22 @@ nav img {
     width: 75px;
 }
 
+nav img, nav button {
+    margin: 1rem 2.2rem;
+}
+
 nav button {
     border: none;
     color: #a8afbd;
     background: none;
+    font-family: GraphikSemiBold;
+    padding: 0 1.2rem;
+}
+
+nav button:hover {
+    color: white;
+    background-color: #323843;
+    border-radius: 5px;
 }
 
 /* Main Content */
@@ -66,8 +173,10 @@ main {
 }
 
 main h5 {
-    margin: 0;
+    margin-bottom: 0;
+    margin-top: 5rem;
 }
+
 
 #gallery {
     display: grid;
@@ -78,6 +187,7 @@ main h5 {
 
 #gallery img {
     height: 30vh;
+    width: 100%;
 }
 
 
@@ -85,6 +195,8 @@ main h5 {
     #gallery {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
+        gap: 0.5em;
     }
 };
+
 
